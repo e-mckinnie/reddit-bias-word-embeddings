@@ -1,3 +1,6 @@
 gensim
 nltk
+numpy
 pandas
+scipy
+statsmodels
