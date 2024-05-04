@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_dataset(subreddit, prefix="data/clean/"):
+def load_dataset(subreddit, prefix="../data/clean/"):
     df = pd.read_pickle(prefix+subreddit+".pkl")
     return df
 
