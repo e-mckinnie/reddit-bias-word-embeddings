@@ -5,7 +5,7 @@ from statsmodels.distributions.empirical_distribution import ECDF
 # https://github.com/e-mckinnie/WEAT
 # authored by Elizabeth McKinnie, 2022
 # Modified to include _cos function from
-# WordEmbeddingTest class (also authored by Elizabeth McKinnie)
+# WordEmbeddingTest class (also authored by Elizabeth McKinnie, 2022)
 class WEAT():
     def __init__(self, X, Y, A, B):
         self.X = X

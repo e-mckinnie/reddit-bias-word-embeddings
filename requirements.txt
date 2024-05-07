@@ -2,5 +2,5 @@ gensim
 nltk
 numpy
 pandas
-scipy
+scipy==1.12.0
 statsmodels
