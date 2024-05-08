@@ -50,19 +50,9 @@ def rows_to_df_to_db(rows,cols):
         df['timestamp'] = pd.to_datetime(df['created_utc'],unit='s')
     target_cols = cols
     df = df[[c for c in target_cols if c in df.columns]]
-    # for col in ['preview','media','media_embed','secure_media','secure_media_embed']:
-    #     if col in df.columns:
-    #         df[col] = df[col].apply(json.dumps)
-
-    # for col in df.columns:
-        # df[col] = df[col].astype(str)
+    
     df = df.replace({"\x00": "\uFFFD"}, regex=True)
-    # df = df[[c for c in df.columns if c not in ['preview','media','media_embed','secure_media','secure_media_embed']]]
-    # df = df.applymap(replace_dict_with_none) #sledgehammer
-
-    # if i == 0:
-    #     cols = df.columns
-    # else:
+    
     df = df[[c for c in cols if c in df.columns]] #force column order 
 
 
